@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FiyatTakip.AdminPage"
+             BackgroundColor="#000000"
+             Title="Yönetim Paneli">
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+        <Label Text="ADMIN AYARLARI" TextColor="#D4AF37" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+        <BoxView HeightRequest="1" Color="#D4AF37" Opacity="0.5" />
+        <VerticalStackLayout Spacing="10">
+            <Label Text="Gram Başı Kâr Marjı (TL):" TextColor="White" />
+            <Entry x:Name="EntKar" Placeholder="Örn: 50" TextColor="White" Keyboard="Numeric" BackgroundColor="#1A1A1A" />
+        </VerticalStackLayout>
+        <Button Text="AYARLARI KAYDET" Clicked="OnSaveClicked" BackgroundColor="#D4AF37" TextColor="Black" HeightRequest="50" FontAttributes="Bold" />
+        <Button Text="ANA SAYFAYA DÖN" Clicked="OnBackClicked" BackgroundColor="Transparent" TextColor="#D4AF37" BorderColor="#D4AF37" BorderWidth="1" HeightRequest="50" />
+    </VerticalStackLayout>
+</ContentPage>
